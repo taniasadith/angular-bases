@@ -17,4 +17,15 @@ export class MainPageComponent {
         name: 'Vegueta',
         power: 7500,
     }];
+
+    onNewCharacter(character:Character ):void{
+/*         console.log('MainPage');
+        console.log(character); */
+
+        this.characters.push(character);
+    }
+
+    onDeleteCharacter(index:number):void{
+        this.characters.splice(index,1);
+    }
 }
